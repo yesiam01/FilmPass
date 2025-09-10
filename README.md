@@ -137,12 +137,13 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 <details>
   <summary>선택 근거 보기</summary>
+  
 
   - **개발팀 친숙도**: 학습 곡선이 낮음  
   - **인메모리 고성능 처리**  
   - **Set NX EX TTL 기능 제공**  
   - **분산 클러스터 요구사항 충족**  
-  - 프로젝트 요구사항과 팀 역량에 최적의 매칭  
+  - **프로젝트 요구사항과 팀 역량에 최적의 매칭**
 
 </details>
 
@@ -152,6 +153,7 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 <details>
   <summary>선택 근거 보기</summary>
+  
 
   - **분산 캐시**: 다중 서버 환경 지원  
   - **메모리 관리**: LRU/LFU 기반 자동 Eviction 정책  
@@ -165,6 +167,7 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 <details>
   <summary>선택 근거 보기</summary>
+  
 
   <img width="683" height="424" alt="20250825_000412" src="https://github.com/user-attachments/assets/f8b73d78-81fa-422f-ba08-e80c05936195" />
 
@@ -196,6 +199,7 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 <details>
   <summary>선택 근거 보기</summary>
+  
 
   #### 선택 근거
   1. **확장성**: 부하 크기 확장 용이  
