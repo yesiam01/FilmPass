@@ -226,31 +226,22 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 ### 💻 NGRINDER CPU 병목 현상
 
 <details>
-  <summary>문제 정의</summary>
+  <summary>자세히 보기</summary>
 
-  **발생 문제**  
-  - NGRINDER를 이용한 성능 테스트 중  
-  - **트래픽 제너레이터 CPU 사용률이 99% ~ 100% 도달**  
+  #### 문제 정의
+  - NGRINDER 성능 테스트 중  
+  - 트래픽 제너레이터 CPU 사용률이 **99% ~ 100%** 도달  
   - 리소스 과부하 발생  
 
-</details>
+  #### 해결 방안
+  - 요청 간격 조정 → 연속 요청 사이에 50ms 지연 추가  
+  - 불필요한 로깅 코드 제거  
 
-<details>
-  <summary>해결 방안</summary>
-
-  **스크립트 최적화 전략**  
-  1. 요청 간격 조정 → 연속 요청 사이에 50ms 지연 추가  
-  2. 불필요한 로깅 코드 제거  
-
-</details>
-
-<details>
-  <summary>결과 및 검증</summary>
-
+  #### 결과 및 검증
   | 상태 | CPU 사용률 | 안정성 | 테스트 정확도 |
   |------|------------|--------|----------------|
-  | **최적화 전** | 99% ~ 100% | ❌ 불안정 | ❌ 결과 왜곡 |
-  | **최적화 후** | 정상 (60~80% 유지) | ✅ 안정적 | ✅ 정확 측정 |
+  | **최적화 전** | 99% ~ 100% | ❌ 불안정 | ❌ 왜곡 |
+  | **최적화 후** | 정상 (60~80% 유지) | ✅ 안정적 | ✅ 정확 |
 
 </details>
 
@@ -259,25 +250,19 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 ### 🔒 트랜잭션 락 문제
 
 <details>
-  <summary>문제 정의</summary>
+  <summary>자세히 보기</summary>
 
+  #### 문제 정의
   - 커밋 전에 락이 해제되는 문제 발생  
-  - **동시성 제어 실패**: 트랜잭션 커밋 전후의 간극에서 동시 처리 이슈 발생  
+  - **동시성 제어 실패**: 커밋 전후의 간극에서 처리 충돌 발생  
 
-</details>
+  #### 해결 방안
+  - `@Transactional` 분리 → 조회와 예약을 별도 트랜잭션으로 설정  
+  - `@Lock(LockModeType.PESSIMISTIC_WRITE)` 적용 → 동시성 제어 강화  
 
-<details>
-  <summary>해결 방안</summary>
-
-  1. `@Transactional` 분리 → 조회와 예약 처리를 별도 트랜잭션으로 설정  
-  2. `@Lock(LockModeType.PESSIMISTIC_WRITE)` 적용 → 동시성 제어 강화  
-
-</details>
-
-<details>
-  <summary>결과 및 검증</summary>
-
-  - 중복 예약 및 데드락 문제 해결  
+  #### 결과 및 검증
+  - 중복 예약 방지  
+  - 데드락 해결  
   - 티켓 예매 시스템 안정성 확보  
 
 </details>
@@ -287,27 +272,17 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 ### 🔗 Redis 연결 문제
 
 <details>
-  <summary>문제 정의</summary>
+  <summary>자세히 보기</summary>
 
-  - Local Redis(6379)와 애플리케이션 서버(8080) 간 연결 불가  
+  #### 문제 정의
+  - Local Redis(6379) ↔ Application Server(8080) 연결 불가  
+  - 원인: Docker 네트워크 설정 문제, 포트 매핑 오류  
 
-  **원인**  
-  - Docker 컨테이너 간 네트워크 설정 문제  
-  - Redis 컨테이너의 포트 매핑 오류  
+  #### 해결 방안
+  - Docker 네트워크 → Bridge → Host로 수정  
+  - 불필요한 로깅 코드 제거  
 
-</details>
-
-<details>
-  <summary>해결 방안</summary>
-
-  1. Docker 네트워크 설정 수정 → Bridge Network → Host Network  
-  2. 불필요한 로깅 코드 제거  
-
-</details>
-
-<details>
-  <summary>결과 및 검증</summary>
-
+  #### 결과 및 검증
   - 정상 연결 확인  
   - 데이터 저장 및 조회 정상 동작  
 
@@ -318,26 +293,20 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 ### 📊 Elasticsearch 성능 저하
 
 <details>
-  <summary>문제 정의</summary>
+  <summary>자세히 보기</summary>
 
-  - DB보다 검색 속도가 느림  
-  - 불필요한 필드까지 인덱싱 → 인덱스 크기 과도 증가  
+  #### 문제 정의
+  - DB보다 검색 속도 저하  
+  - 불필요한 필드 인덱싱 → 인덱스 크기 과도 증가  
   - 전체 필드 검색 시 응답 속도 저하  
 
-</details>
+  #### 해결 방안
+  - 핵심 필드(키워드, 영화 제목, 내용)만 인덱싱  
+  - 불필요한 필드 제거로 검색 범위 축소  
 
-<details>
-  <summary>해결 방안</summary>
-
-  1. **인덱싱 최적화** → 핵심 검색 필드(키워드, 영화 제목, 내용)만 선택적 인덱싱  
-  2. **검색 범위 축소** → 불필요한 필드 제거로 효율성 향상  
-
-</details>
-
-<details>
-  <summary>결과 및 검증</summary>
-
-  - 데이터 증가에도 불구하고 검색 성능 **11~22% 개선**  
+  #### 결과 및 검증
+  - 검색 성능 **11~22% 개선**  
 
 </details>
+
 
