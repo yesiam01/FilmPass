@@ -153,7 +153,8 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 <details>
   <summary>선택 근거 보기</summary>
-  
+
+
 
   - **분산 캐시**: 다중 서버 환경 지원  
   - **메모리 관리**: LRU/LFU 기반 자동 Eviction 정책  
