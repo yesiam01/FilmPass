@@ -16,7 +16,7 @@
 
 ---
 
-## 1. 프로젝트 소개
+## 프로젝트 소개
 영화 예매 시스템 - **FilmPass**  
 <img width="380" height="270" alt="filmpass_resized_380x270 (2)" src="https://github.com/user-attachments/assets/f0e1fd79-209e-4250-9d9a-c8446b4964e9" />
 
@@ -25,19 +25,19 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 ---
 
-## 2. 팀원 소개
+##  팀원 소개
 <img width="1628" height="809" alt="Desktop Screenshot 2025 08 26 - 13 23 15 81" src="https://github.com/user-attachments/assets/b2b66d94-8231-4128-bd1d-e5fc66d8e4f3" />
 
 
 ---
 
-## 3. 개발 기간
+##  개발 기간
 📅 **2025/07/17 ~ 2025/08/22**
 
 ---
 
 
-## 5. 시스템 설계 자료
+##  시스템 설계 자료
 
 ### 🗂️ 아키텍처
 
@@ -79,7 +79,7 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 ---
 
 
-## 6. 주요 기능
+##  주요 기능
 
 ### 사용자, 관리자 이용 흐름
 <img width="952" height="327" alt="20250910_191422" src="https://github.com/user-attachments/assets/55ffc947-4f42-4f8b-82c0-e85f68ce8e32" />
@@ -131,7 +131,7 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 ---
 
 
-## 7. 기술적 의사 결정
+##  기술적 의사 결정
 
 ### 🔐 Redis Lock
 
@@ -218,7 +218,7 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 ---
 
 
-## 9. 트러블슈팅 (Troubleshooting)
+##  트러블슈팅 (Troubleshooting)
 
 ### 💻 NGRINDER CPU 병목 현상
 
