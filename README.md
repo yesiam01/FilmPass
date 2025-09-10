@@ -166,13 +166,15 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 <details>
   <summary>선택 근거 보기</summary>
 
-  <img width="600" alt="20250825_000412.png" src="https://github.com/user-attachments/assets/F6E9C909-79E6-4627-8F08-68bc068885561" />
+  <img width="683" height="424" alt="20250825_000412" src="https://github.com/user-attachments/assets/f8b73d78-81fa-422f-ba08-e80c05936195" />
+
 
   #### 인덱싱 
   - **RDBMS 방식** : 순차적 검색으로 데이터 증가시 성능 저하
   - **ES 역색인 방식** : 키워드 기반 즉시 문서 매칭으로 고속 검색
 
-  <img width="600" alt="20250827_152213.png" src="https://github.com/user-attachments/assets/b7c88d0a-59e0-41ee-b9b8-d77f1f86cb71" />
+  <img width="859" height="391" alt="20250827_152213" src="https://github.com/user-attachments/assets/76a769de-4a76-4be1-bd38-c2ab4b58f929" />
+
 
   #### 자동완성
   - **키워드 제안**  
