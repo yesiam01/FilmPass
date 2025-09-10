@@ -78,6 +78,7 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
   <img width="910" height="645" alt="20250718_144951 (1)" src="https://github.com/user-attachments/assets/bb47674f-4da1-43b5-869d-ba7db2280aa1" />
 
 </details>
+
 ---
 
 ## 6. 주요 기능
