@@ -307,69 +307,46 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 ### 성능 개선
 
-<aside>
+### 📊 Elasticsearch 성능 개선
 
-### ES 성능 개선
+<details>
+  <summary>자세히 보기</summary>
 
-# Elasticsearch 성능 개선
+  #### 개선 전후 비교
 
----
+  <img width="896" height="514" alt="20250825_164332" src="https://github.com/user-attachments/assets/c8aeff01-b45-4b67-8EF5-2cd4302dcddc" />
 
-## 개선 전후 성능 비교
+  | 데이터 규모 | MySQL (MS) | Elasticsearch (MS) | 성능 개선률 | 상태 |
+  |------------|------------|-------------------|------------|------|
+  | **100 페이지** | 32ms | 29ms | **9.4% ↑** | 🟢 개선 |
+  | **500 페이지** | 38ms | 31ms | **18.4% ↑** | 🟢 개선 |
+  | **1000 페이지** | 41ms | 32ms | **22.0% ↑** | 🟢 개선 |
 
-![20250825_164332.png](attachment:0ae1de15-6d2d-4882-a1ab-945050518f07:20250825_164332.png)
+  #### 성능 패턴 분석
+  - 100 페이지: 9.4% 개선 (약간 개선)  
+  - 500 페이지: 18.4% 개선 (중간 수준 개선)  
+  - 1000 페이지: 22.0% 개선 (대폭 개선, 32ms → 41ms)  
+  - Elasticsearch: 데이터 증가에도 안정적 성능 유지 (29ms → 32ms)  
 
-### 📈 성능 비교 결과
-
-| 데이터 규모 | MySQL (ms) | Elasticsearch (ms) | 성능 향상률 | 상태 |
-| --- | --- | --- | --- | --- |
-| **100 페이지** | `32ms` | `29ms` | **9.4% ↑** | 🟢 개선 |
-| **500 페이지** | `38ms` | `31ms` | **18.4% ↑** | 🟢 개선 |
-| **1000 페이지** | `41ms` | `32ms` | **22.0% ↑** | 🟢 개선 |
-
----
-
-### 성능 패턴 분석
-
-- **100 페이지**: 9.4% 향상 (소폭 개선)
-- **500 페이지**: 18.4% 향상 (중간 개선)
-- **1000 페이지**: 22.0% 향상 (큰 폭 개선)
-
-### 성능 트렌드
-
-- **MySQL**: 데이터량 증가 시 선형적 성능 저하 (32ms → 41ms)
-- **Elasticsearch**: 데이터량 증가에도 안정적 성능 유지 (29ms → 32ms)
+</details>
 
 ---
 
-</aside>
+### 🚀 Redis 캐시 성능 개선
 
-<aside>
+<details>
+  <summary>자세히 보기</summary>
 
-### Redis Cache 성능 개선
+  #### 캐시 적용 전
+  - **응답 시간**: DB 직접 조회  
+  - **성능 특성**: 요청 시마다 DB 쿼리 실행  
 
-# 🚀 Redis Cache 성능 개선
+  <img width="804" height="373" alt="no cache" src="https://github.com/user-attachments/assets/173ED7E9-8824-4cb6-9EEB-96ACBCAA59" />
 
----
+  #### 캐시 적용 후
+  - **특징**: 첫 요청 이후 데이터 재사용 가능 (캐시 활용)  
 
-## 📊 테스트 결과
+  <img width="803" height="378" alt="cache" src="https://github.com/user-attachments/assets/237c4bbc-28C4-46A3-a081-5408b665b8bd" />
 
-### 캐시 적용 전
+</details>
 
-- **응답 시간**: 데이터베이스 직접 조회
-- **성능 특성**: 매 요청마다 DB 쿼리 실행
-    
-<img width="804" height="373" alt="캐시_없음" src="https://github.com/user-attachments/assets/173ed7e9-8824-4cb6-9eeb-e76acbbcaa59" />
-
-    
-
-### 캐시 적용 후
-
-- **응답 시간**: Redis 메모리 캐시 활용
-- **성능 특성**: 첫 요청 후 캐시된 데이터 재사용
-    
-<img width="803" height="378" alt="캐시_적용" src="https://github.com/user-attachments/assets/237c4bbc-28c4-46a3-a081-5408b665b8bd" />
-
-    
-
-</aside>
