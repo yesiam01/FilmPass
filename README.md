@@ -162,9 +162,6 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 - [Postman](https://www.notion.so/Postman-2532dc3ef51480f6a06aefe6be154f60?pvs=21)  
 - [Junit5]()
 
-## 8. API 명세서
-
-(https://www.notion.so/teamsparta/1-One-Take-2482dc3ef51480f985aff3278597742f?source=copy_link#2532dc3ef51480ae9cb8f6b729725101)
 
 ## 9. 트러블슈팅 (Troubleshooting)
 발생했던 문제는 nGrinder 의 트래픽 발생기에서 CPU 병목 현상이 발생했습니다.
