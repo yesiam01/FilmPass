@@ -67,9 +67,16 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 </details>
 
----
+### 🛠️ 기술 스택
 
-<img width="749" height="570" alt="image" src="https://github.com/user-attachments/assets/3c14bee6-83ff-4308-a118-0c1f736f0c30" />
+<details>
+  <summary>기술 스택 이미지 보기</summary>
+
+  <img width="749" height="570" alt="image" src="https://github.com/user-attachments/assets/3c14bee6-83ff-4308-a118-0c1f736f0c30" />
+
+</details>
+
+---
 
 
 ## 6. 주요 기능
