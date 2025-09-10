@@ -243,7 +243,7 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 </details>
 
 
-### 🔒 트랜잭션 락 문제  <summary>자세히 보기</summary>
+### 🔒 트랜잭션 락 문제
 
 <details>
   <summary>자세히 보기</summary>
