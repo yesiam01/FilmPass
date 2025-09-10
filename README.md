@@ -164,15 +164,20 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 ### 📊 Elasticsearch
 
 <details>
-  <summary>특징 보기</summary>
+  <summary>선택 근거 보기</summary>
 
   <img width="600" alt="20250825_000412.png" src="https://github.com/user-attachments/assets/F6E9C909-79E6-4627-8F08-68bc068885561" />
+
+  #### 인덱싱 
+  - **RDBMS 방식** : 순차적 검색으로 데이터 증가시 성능 저하
+  - **ES 역색인 방식** : 키워드 기반 즉시 문서 매칭으로 고속 검색
+
+  <img width="600" alt="20250827_152213.png" src="https://github.com/user-attachments/assets/b7c88d0a-59e0-41ee-b9b8-d77f1f86cb71" />
 
   #### 자동완성
   - **키워드 제안**  
   - **검색 후 최적화**: 검색 쿼리 수를 줄여 성능 향상  
-
-  <img width="600" alt="20250827_152213.png" src="https://github.com/user-attachments/assets/b7c88d0a-59e0-41ee-b9b8-d77f1f86cb71" />
+  
 
   #### 주요 장점
   1. **성능**: 역색인 기반 빠른 전문 검색  
