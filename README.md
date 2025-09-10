@@ -147,7 +147,6 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 </details>
 
----
 
 ### 🪙 Redis Cache
 
@@ -162,7 +161,6 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 </details>
 
----
 
 ### 📊 Elasticsearch
 
@@ -194,7 +192,6 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 </details>
 
----
 
 ### 💡 nGrinder
 
@@ -245,7 +242,6 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 </details>
 
----
 
 ### 🔒 트랜잭션 락 문제
 
@@ -267,7 +263,6 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 </details>
 
----
 
 ### 🔗 Redis 연결 문제
 
@@ -288,7 +283,6 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 </details>
 
----
 
 ### 📊 Elasticsearch 성능 저하
 
