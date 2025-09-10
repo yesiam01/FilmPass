@@ -46,18 +46,19 @@
 <aside>
 💡
 
-### **🎀ERD**
+<details>
+<summary>📊 ERD - V1</summary>
 
-- V1
-    
-   ![erd.PNG](attachment:0b855d3d-c133-4647-986c-c59a566317e8:erd.png)
-    
-- V2
-    
-    ![20250806_223034.png](20250806_223034.png)
-    
-</aside>
+![erd.PNG](erd.png)
 
+</details>
+
+<details>
+<summary>📊 ERD - V2</summary>
+
+![20250806_223034.png](20250806_223034.png)
+
+</details>
 <aside>
 💡
 
