@@ -330,7 +330,6 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 </details>
 
----
 
 ### 🚀 Redis 캐시 성능 개선
 
@@ -349,4 +348,6 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
   <img width="803" height="378" alt="cache" src="https://github.com/user-attachments/assets/237c4bbc-28C4-46A3-a081-5408b665b8bd" />
 
 </details>
+
+---
 
