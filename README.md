@@ -50,7 +50,7 @@
 
 - V1
     
-    ![erd.PNG](erd.png)
+   ![erd.PNG](attachment:0b855d3d-c133-4647-986c-c59a566317e8:erd.png)
     
 - V2
     
