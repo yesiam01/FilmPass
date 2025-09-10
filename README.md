@@ -59,14 +59,25 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
   <img width="450" height="421" alt="1조 아키텍처 drawio" src="https://github.com/user-attachments/assets/8e09798b-8c2d-4f67-8642-5c0d4dad21e8" />
 
 </details>
+
 ### 🗄️ ERD (Entity Relationship Diagram)
-<img width="976" height="671" alt="20250806_223034 (1)" src="https://github.com/user-attachments/assets/1165b51d-5f05-45b6-a63f-9d801d563dce" />
+
+<details>
+  <summary>ERD 다이어그램 보기</summary>
+
+  <img width="976" height="671" alt="20250806_223034 (1)" src="https://github.com/user-attachments/assets/1165b51d-5f05-45b6-a63f-9d801d563dce" />
+
+</details>
 
 
 ### 🖼️ 와이어프레임
-<img width="910" height="645" alt="20250718_144951 (1)" src="https://github.com/user-attachments/assets/bb47674f-4da1-43b5-869d-ba7db2280aa1" />
 
+<details>
+  <summary>와이어프레임 이미지 보기</summary>
 
+  <img width="910" height="645" alt="20250718_144951 (1)" src="https://github.com/user-attachments/assets/bb47674f-4da1-43b5-869d-ba7db2280aa1" />
+
+</details>
 ---
 
 ## 6. 주요 기능
