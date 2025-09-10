@@ -51,10 +51,14 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 ## 5. 시스템 설계 자료
 
-<summary>### 🗂️ 아키텍처</summary>
-<img width="450" height="421" alt="1조 아키텍처 drawio" src="https://github.com/user-attachments/assets/8e09798b-8c2d-4f67-8642-5c0d4dad21e8" />
+### 🗂️ 아키텍처
 
+<details>
+  <summary>아키텍처 다이어그램 보기</summary>
 
+  <img width="450" height="421" alt="1조 아키텍처 drawio" src="https://github.com/user-attachments/assets/8e09798b-8c2d-4f67-8642-5c0d4dad21e8" />
+
+</details>
 ### 🗄️ ERD (Entity Relationship Diagram)
 <img width="976" height="671" alt="20250806_223034 (1)" src="https://github.com/user-attachments/assets/1165b51d-5f05-45b6-a63f-9d801d563dce" />
 
