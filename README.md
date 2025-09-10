@@ -316,7 +316,8 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
   #### 개선 전후 비교
 
-  <img width="896" height="514" alt="20250825_164332" src="https://github.com/user-attachments/assets/c8aeff01-b45-4b67-8EF5-2cd4302dcddc" />
+<img width="896" height="514" alt="20250825_164332" src="https://github.com/user-attachments/assets/db1c75a2-11aa-447d-912b-69b8892e45a6" />
+
 
   | 데이터 규모 | MySQL (MS) | Elasticsearch (MS) | 성능 개선률 | 상태 |
   |------------|------------|-------------------|------------|------|
@@ -342,7 +343,8 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
   - **응답 시간**: DB 직접 조회  
   - **성능 특성**: 요청 시마다 DB 쿼리 실행  
 
-  <img width="804" height="373" alt="no cache" src="https://github.com/user-attachments/assets/173ED7E9-8824-4cb6-9EEB-96ACBCAA59" />
+<img width="804" height="373" alt="캐시_없음" src="https://github.com/user-attachments/assets/eeb430ec-0160-4cc6-8224-5d74cd99f593" />
+
 
   #### 캐시 적용 후
   - **특징**: 첫 요청 이후 데이터 재사용 가능 (캐시 활용)  
