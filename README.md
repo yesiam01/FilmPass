@@ -1,5 +1,11 @@
 # 노션
 
+---
+
+## 2. 팀원 소개
+<img width="1628" height="809" alt="Desktop Screenshot 2025 08 26 - 13 23 15 81" src="https://github.com/user-attachments/assets/b2b66d94-8231-4128-bd1d-e5fc66d8e4f3" />
+
+
 영화 예매 시스템 -
 
 **FilmPass**
