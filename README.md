@@ -17,7 +17,9 @@
 ---
 
 ## 프로젝트 소개
-영화 예매 시스템 - **FilmPass**  
+### 영화 예매 시스템 - **FilmPass**
+
+
 <img width="380" height="270" alt="filmpass_resized_380x270 (2)" src="https://github.com/user-attachments/assets/f0e1fd79-209e-4250-9d9a-c8446b4964e9" />
 
 FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험을 제공하고,  
