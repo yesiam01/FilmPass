@@ -51,7 +51,7 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 ## 5. 시스템 설계 자료
 
-### 🗂️ 아키텍처
+<summary>### 🗂️ 아키텍처</summary>
 <img width="450" height="421" alt="1조 아키텍처 drawio" src="https://github.com/user-attachments/assets/8e09798b-8c2d-4f67-8642-5c0d4dad21e8" />
 
 
