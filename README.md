@@ -36,18 +36,6 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 
 ---
 
-## 4. 개발 환경
-- **OS**: Windows 10 / macOS (팀원별 환경)  
-- **IDE**: IntelliJ IDEA Ultimate  
-- **Version Control**: Git, GitHub  
-- **Build Tool**: Gradle 8.x  
-- **Database(Local)**: H2 Database (개발용)  
-- **Database(Prod)**: MySQL 8.x  
-- **Cache**: Redis 7.x  
-- **Infra**: Docker, AWS EC2  
-- **협업 툴**: Notion, Slack, ERD Cloud  
-
----
 
 ## 5. 시스템 설계 자료
 
@@ -80,6 +68,9 @@ FilmPass는 고객들에게 빠르고 안정적인 영화 티켓 예매 경험�
 </details>
 
 ---
+
+<img width="749" height="570" alt="image" src="https://github.com/user-attachments/assets/3c14bee6-83ff-4308-a118-0c1f736f0c30" />
+
 
 ## 6. 주요 기능
 
